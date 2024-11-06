@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .div
+        {
+
+            margin-top: 5rem;
+            margin: auto;
+        }
+        
+        table
+        {
+            border: 2px solid black;
+            height: 40vh;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            border-collapse: collapse;
+            
+        }
+        th{
+            border: 1px solid black;
+
+        }
+        
+        td
+        {
+            border: 1px solid black;
+            
+        }
+        thead tr{
+            height: 4rem;
+            background-color: lightcoral;
+        }
+        tbody tr:nth-child(odd)
+        {
+            background-color: rgb(208, 205, 205);
+        }
+
+        tbody tr:nth-child(even)
+        {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <table>
+            <thead>
+                <tr>
+                    <th>TECHNAME</th>
+                    <th>INVENTOR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Tim Berners Lee</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Wium Lee</td>
+                </tr>
+                <tr>
+                    <td>JS</td>
+                    <td>Brendan Eich</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>James Gosling</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

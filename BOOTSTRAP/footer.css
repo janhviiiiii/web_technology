@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.main_container {
+  display: flex;
+  align-items: flex-end;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.row {
+  justify-content: space-around;
+  margin: 0;
+}
+
+ul.list-unstyled {
+  padding: 0;
+  margin: 0;
+}
+
+ul.list-unstyled li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.list-unstyled li a:hover {
+  color: #ddd;
+}
+
+img {
+  width: 10rem;
+}
+
+.icon_row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon_row i {
+  background-color: rgb(0, 122, 205);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main_container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #000; /* Ensures the footer background covers the full width */
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  color: #ddd;
+  padding-top: 1rem;
+}
+
+.icon_row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}

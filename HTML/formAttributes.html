@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attributes</title>
+</head>
+<body>
+    
+    <div class="form" style="margin: auto; padding: 1rem; text-align: justify; width: 60rem; background-color:  rgba(186, 21, 192, 0.133);">
+
+        <form action="demo.html">
+           
+            <fieldset>
+                <legend>
+                    <h1>FORM</h1>
+                </legend>
+                <br><br><br>
+                <div class="form-div" style="font-size: large; ">
+                    <label for="name">
+                        Name:
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name"><br><br>
+
+                    <label for="password">
+                        Password:
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
+                                        
+                    <label for="experience">
+                        Experience Level:
+                    </label>
+                    <input type="range" id="experience" name="experience"> [from 0-10 years]<br><br>
+
+                    <label for="gender">
+                        Gender:
+                    </label>
+                    <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                    <input type="radio" id="other" name="gender" value="other"><label for="other">Other</label><br><br>
+                    
+                    <label for="interest">
+                        Interest:
+                    </label>
+                    <input type="checkbox" id="reading" name="interest" value="reading"><label for="reading">Reading</label>
+                    <input  type="checkbox" id="music" name="interest" value="music"><label for="music">Music</label>
+                    <input type="checkbox" id="travel" name="interest" value="travel"><label for="travel">Travel</label><br><br>
+            
+                    <label for="color">
+                        Favorite Color:
+                    </label>
+                    <input type="color" id="color" name="color"><br><br>
+
+                    <label for="dob">
+                        Date of Birth:
+                    </label>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <label for="contact">
+                        Preferred Contact Time:
+                    </label>
+                    <input type="time" id="contact" name="time"><br><br>
+                    
+                    <label for="meeting">
+                        Meeting Date & Time:
+                    </label>
+                    <input type="datetime-local" id="meeting" name="meeting"><br><br>
+
+                    <label for="phone">
+                        Phone Number:
+                    </label>
+                    <select name="country_code">
+                        <option value="+91">+91</option>
+                        <option value="+7">+7</option>
+                        <option value="+1">+1</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number"><br><br>
+
+                    <label for="github">
+                        Github:
+                    </label>
+                    <input type="url" id="github" name="github" placeholder="Enter github id"><br><br>
+            
+                    <label for="file">
+                        Upload Resume:
+                    </label>
+                    <input type="file" id="resume" name="resume"><br><br>
+
+                    <input type="hidden" type="text" id="hidden" name="hidden">
+
+                    
+                    <!-- <input type="image" src="website task/img/amazon_logo.png"  id="image" name="image"> -->
+
+                    <button id="submit" type="submit">Submit</button>
+                    <button id="cancel" type="reset">Cancel</button>
+
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment 2</title>
+</head>
+<body>
+    
+    <div class="form" style="margin: auto; padding: 1rem; text-align: justify; width: 60rem; background-color:  rgba(192, 21, 21, 0.133);">
+
+        <form action="demo.html"> 
+           
+            <fieldset>
+                <legend>
+                    <h1>FORM</h1>
+                </legend>
+                <br><br><br>
+                <div class="form-div" style="font-size: large; ">
+                    <label for="username">
+                        Username:
+                    </label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username"><br><br>
+
+                    <label for="password">
+                        Password:
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
+                                                            
+                    <label for="phone">
+                        Phone Number:
+                    </label>
+                    <select name="country_code"> <!--give name to store the country_code as well-->
+                        <option value="+91">+91</option>
+                        <option value="+7">+7</option>
+                        <option value="+1">+1</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number"><br><br>
+
+                    <label for="feedback">
+                        Feedback:
+                    </label>
+                    <textarea id="feedback" name="feedback" placeholder="Enter Feedback"></textarea><br><br>
+
+                    <button id="submit" type="submit">Submit</button>
+                    <button id="cancel" type="reset">Cancel</button>
+
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>FOOD MUNCH APP</title>
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#why_choose_us_section"
+                >WHY CHOOSE US</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu_section">EXPLORE MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#delivery_and_payment_section"
+                >DELIVER & PAYMENT</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer_section">FOLLOW US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- carousel start -->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel_img_div">
+          <img
+            src="https://le-tandoor.restaurant.mu/content/restaurants/le-tandoor/gallery/le-tandoor-restaurant%20(01).jpg"
+            class="d-block carousel_img"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item carousel_img_div">
+          <img
+            src="https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg"
+            class="d-block carousel_img"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item carousel_img_div">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/036/804/331/non_2x/ai-generated-assorted-indian-food-on-dark-wooden-background-free-photo.jpg"
+            class="d-block carousel_img"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel end -->
+
+    <!-- grid start -->
+    <div class="container-fluid">
+      <!-- Why choose us -->
+      <h1
+        class="col-12 d-flex justify-content-center mt-5 mb-5 whyChooseUs"
+        id="why_choose_us_section"
+      >
+        Why Choose Us
+      </h1>
+      <div class="row d-flex justify-content-evenly">
+        <div
+          class="col-12 col-lg-3 shadow d-flex flex-column align-items-center"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png"
+            alt="food service"
+          />
+          <h4>Food Service</h4>
+          <p>Provides Best Food Service.</p>
+        </div>
+
+        <div
+          class="col-12 col-lg-3 shadow d-flex flex-column align-items-center"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png"
+            alt="best offer"
+          />
+          <h4>Best Offer</h4>
+          <p>Provides Pocket Friendy Offers.</p>
+        </div>
+
+        <div
+          class="col-12 col-lg-3 shadow d-flex flex-column align-items-center"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png"
+            alt="fresh food"
+          />
+          <h4>Fresh Food</h4>
+          <p>Provied Fresh and Natural Food.</p>
+        </div>
+      </div>
+
+      <!-- Menu Section -->
+      <h1
+        class="col-12 d-flex justify-content-around mt-5 mb-5"
+        id="menu_section"
+      >
+        Menu Section
+      </h1>
+      <div class="row d-flex justify-content-evenly">
+        <div
+          class="col-12 col-md-4 col-lg-3 shadow p-2 text-center mb-3 rounded menu_div"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+            alt="non veg"
+            class="menu_img"
+          />
+          <a href="nonVegItsms.html"
+            ><button class="btn btn-success mt-2 mb-2 viewmore_btn">
+              View More NonVeg-Items
+            </button></a
+          >
+        </div>
+
+        <div
+          class="col-12 col-md-4 col-lg-3 shadow p-2 text-center mb-3 rounded menu_div"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png"
+            alt="veg"
+            class="menu_img"
+          />
+          <a href="vegItems.html"
+            ><button class="btn btn-success mt-2 mb-2 viewmore_btn">
+              View More Veg-Items
+            </button></a
+          >
+        </div>
+
+        <div
+          class="col-12 col-md-4 col-lg-3 shadow p-2 text-center mb-3 rounded menu_div"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png"
+            alt="soups"
+            class="menu_img"
+          />
+          <a href="soupItems.html"
+            ><button class="btn btn-success mt-2 mb-2 viewmore_btn">
+              View More Soup
+            </button></a
+          >
+        </div>
+        <div
+          class="col-12 col-md-4 col-lg-3 shadow p-2 text-center mb-3 rounded menu_div"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png"
+            alt="fish & sea food"
+            class="menu_img"
+          />
+          <a href="seaFoodItems.html"
+            ><button class="btn btn-success mt-2 mb-2 viewmore_btn">
+              View More Sea-Food
+            </button></a
+          >
+        </div>
+
+        <div
+          class="col-12 col-md-4 col-lg-3 shadow p-2 text-center mb-3 rounded menu_div"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png"
+            alt="main course"
+            class="menu_img"
+          />
+          <a href="mainCourseItems.html"
+            ><button class="btn btn-success mt-2 mb-2 viewmore_btn">
+              View More Main-Course
+            </button></a
+          >
+        </div>
+
+        <div
+          class="col-12 col-md-4 col-lg-3 shadow p-2 text-center mb-3 rounded menu_div"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png"
+            alt="noodles"
+            class="menu_img"
+          />
+          <a href="noodlesItems.html"
+            ><button class="btn btn-success mt-2 mb-2 viewmore_btn">
+              View More Noodles
+            </button></a
+          >
+        </div>
+
+        <div
+          class="col-12 col-md-4 col-lg-3 shadow p-2 text-center mb-3 rounded menu_div"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png"
+            alt="salad"
+            class="menu_img"
+          />
+          <a href="saladItems.html"
+            ><button class="btn btn-success mt-2 mb-2 viewmore_btn">
+              View More Salad
+            </button></a
+          >
+        </div>
+
+        <div
+          class="col-12 col-md-4 col-lg-3 shadow p-2 text-center mb-3 rounded menu_div"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png"
+            alt="dessert"
+            class="menu_img"
+          />
+          <a href="dessertItems.html"
+            ><button class="btn btn-success mt-2 mb-2 viewmore_btn">
+              View More Dessert
+            </button></a
+          >
+        </div>
+      </div>
+      <!-- menu end-->
+
+      <!-- delivery and payment start -->
+
+      <h1
+        class="col-12 col-12 d-flex justify-content-center mt-5 mb-5 whyChooseUs"
+        id="delivery_and_payment_section"
+      >
+        Delivery and Payment Section
+      </h1>
+      <div class="row mt-5 mb-5">
+        <div
+          class="col-12 col-md-6 d-flex justify-content-center order-1 order-md-1"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png"
+            alt="25% off"
+            class="delivery_section_img"
+          />
+        </div>
+        <div
+          class="col-12 col-md-6 d-flex align-items-center justify-content-center order-2 order-md-2"
+        >
+          <div class="w-75">
+            <h2>25% Off - DIWALI OFFER</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Incidunt, sint quia aut veritatis non distinctio, aliquam quae vel
+              ex deserunt dolorem explicabo, omnis maxime laudantium perferendis
+              eveniet minima eligendi? Eos!
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-6 d-flex align-items-center justify-content-center order-4 order-md-3"
+        >
+          <div class="w-75">
+            <h2>Fresh Food</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa a
+              non est porro dolores repellat odit expedita dicta voluptatem
+              possimus! Ducimus quo cumque deserunt reprehenderit repellendus
+              molestiae. Mollitia, voluptatibus aspernatur.
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-6 d-flex justify-content-center order-3 order-md-4"
+        >
+          <img
+            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png"
+            alt="fresh-heathly-food"
+            class="delivery_section_img"
+          />
+        </div>
+      </div>
+
+      <!-- delivery and payment end -->
+
+      <!-- gift section start -->
+
+      <h1
+        class="col-12 col-12 d-flex justify-content-center mt-5 mb-5 whyChooseUs"
+        id="gift_section"
+      >
+        Gift Section
+      </h1>
+      <div
+        class="row mt-5 mb-5 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="col-12 col-md-6 d-flex justify-content-center order-2 order-md-1"
+        >
+          <div class="w-75">
+            <h2>Content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Incidunt, sint quia aut veritatis non distinctio, aliquam quae vel
+              ex deserunt dolorem explicabo, omnis maxime laudantium perferendis
+              eveniet minima eligendi? Eos!
+            </p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Click Me! :)
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      REDEEM CODE!
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body" id="modal_body">
+                    <img
+                      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png"
+                      class="gift_section_voucher"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <!-- <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 order-1 order-md-2">
+          <div class="gift_div">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+              alt="gift-box"
+              class="gift-section-box-image"
+            />
+            <!-- <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png"
+              alt="gift-voucher"
+              class="gift-section-voucher-image"
+            /> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- gift section end -->
+
+      <!-- accordian start -->
+      <h1
+        class="col-12 col-12 d-flex justify-content-center mt-5 mb-5 whyChooseUs"
+        id="gift_section"
+      >
+        Explore options near me
+      </h1>
+
+      <div class="row mb-5">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Popular Cuisines Near Me
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul class="ul_class">
+                    <li>Beverages near me</li>
+                    <li>Biryani near me</li>
+                    <li>Burger near me</li>
+                    <li>Chinese near me</li>
+                    <li>Coffee near me</li>
+                    <li>Desserts near me</li>
+                    <li>Ice Cream near me</li>
+                    <li>Kebab near me</li>
+                    <li>Maharashtrian near me</li>
+                    <li>Momos near me</li>
+                    <li>Mughlai near me</li>
+                    <li>North Indian near me</li>
+                    <li>Pizza near me</li>
+                    <li>Rolls near me</li>
+                    <li>Sandwich near me</li>
+                    <li>Seafood near me</li>
+                    <li>Shake near me</li>
+                    <li>Sichuan near me</li>
+                    <li>South Indian near me</li>
+                    <li>Street near me</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Popular Restaurant Types Near me
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Bakeries near me</li>
+                    <li>Bars near me</li>
+                    <li>Beverage Shops near me</li>
+                    <li>hojanalya near me</li>
+                    <li>BCafés near me</li>
+                    <li>Casual Dining near me</li>
+                    <li>Clubs near me</li>
+                    <li>Cocktail Bars near me</li>
+                    <li>Confectioneries near me</li>
+                    <li>Dessert Parlors near me</li>
+                    <li>Dhabas near me</li>
+                    <li>Fine Dining near me</li>
+                    <li>Food Courts near me</li>
+                    <li>Food Trucks near me</li>
+                    <li>Irani Cafes near me</li>
+                    <li>Kiosks near me</li>
+                    <li>Lounges near me</li>
+                    <li>Microbreweries near mee</li>
+                    <li>Paan Shop near me</li>
+                    <li>Pubs near me</li>
+                    <li>Quick Bites near me</li>
+                    <li>Sweet Shops near me</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Top Restaurant Chains
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <ul type="none">
+                    <li>Burger Singh</li>
+                    <li>Domino's</li>
+                    <li>Dunkin' Donuts</li>
+                    <li>Faasos</li>
+                    <li>KFC</li>
+                    <li>McDonald's</li>
+                    <li>Paradise Biryani</li>
+                    <li>Subway</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Cities We Deliver To
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body accordian_body">
+                  <ul type="none">
+                    <li>Delhi</li>
+                    <li>NCR</li>
+                    <li>Kolkata</li>
+                    <li>Mumbai</li>
+                    <li>Bengaluru</li>
+                    <li>Pune</li>
+                    <li>Nashik</li>
+                    <li>Ooty</li>
+                    <li>Shimla</li>
+                    <li>Ludhiana</li>
+                    <li>Guwahati</li>
+                    <li>Amritsar</li>
+                    <li>Kanpur</li>
+                    <li>Allahabad</li>
+                    <li>Aurangabad</li>
+                    <li>Bhopal</li>
+                    <li>Ranchi</li>
+                    <li>Visakhapatnam</li>
+                    <li>Bhubaneswar</li>
+                    <li>Coimbatore</li>
+                    <li>Mangalore</li>
+                    <li>Vadodara</li>
+                    <li>Nagpur</li>
+                    <li>Agra</li>
+                    <li>Dehradun</li>
+                    <li>Mysore</li>
+                    <li>Puducherry</li>
+                    <li>Surat</li>
+                    <li>Varanasi</li>
+                    <li>Patna</li>
+                    <li>Udaipur</li>
+                    <li>Srinagar</li>
+                    <li>Khajuraho</li>
+                    <li>Neemrana</li>
+                    <li>Cuttack</li>
+                    <li>Trivandrum</li>
+                    <li>Haridwar</li>
+                    <li>Leh</li>
+                    <li>Pushkar</li>
+                    <li>Rajkot</li>
+                    <li>Madurai</li>
+                    <li>Kozhikode</li>
+                    <li>Alappuzha</li>
+                    <li>Thrissur</li>
+                    <li>Manipal</li>
+                    <li>Vijayawada</li>
+                    <li>Jodhpur</li>
+                    <li>Kota</li>
+                    <li>Ajmer</li>
+                    <li>Mussoorie</li>
+                    <li>Rishikesh</li>
+                    <li>Jalandhar</li>
+                    <li>Jammu</li>
+                    <li>Manali</li>
+                    <li style="text-decoration: underline">
+                      All delivery cities
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <!-- accordian end -->
+
+      <!-- footer start -->
+      <!-- <footer class="bg-dark text-white py-4" id="footer_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <h5>Follow Us</h5>
+              <p>Stay connected through our social media channels</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+              <a href="#" class="text-white me-2">Facebook</a>
+              <a href="#" class="text-white me-2">Twitter</a>
+              <a href="#" class="text-white">Instagram</a>
+            </div>
+          </div>
+          <div class="text-center mt-3">
+            <p class="mb-0">&copy; 2024 FOOD MUNCH APP. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer> -->
+      <!-- footer end -->
+
+      <!-- footer start -->
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start bg-body-tertiary bg-dark text-white"
+        id="footer_section"
+      >
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>FoodMunch App
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p>
+                  <a href="#!" class="text-reset">Angular</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">React</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Vue</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Laravel</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-4"
+          style="background-color: rgba(0, 0, 0, 0.05)"
+        >
+          © 2024 Copyright:
+          <a
+            class="text-reset fw-bold"
+            href="https://mdbootstrap.com/"
+            style="text-decoration: none"
+          >
+            FOOD MUNCH APP. All Rights Reserved.</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      <!-- footer end -->
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

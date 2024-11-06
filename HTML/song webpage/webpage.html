@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+</head>
+<body>
+    
+    <header id="header" style="display: flex; position: fixed; top: 0; left: 0; width: 100%; z-index: 10; background-color: rgb(9, 17, 40); height: 5rem;">
+        <div class="header" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+            <img src="img/logo transparent.png" alt="Logo" style="width: 15rem; height: 6rem;">
+        </div>
+    </header>
+
+    <main style="margin-top: 8rem; width: 90%; margin-left: auto; margin-right: auto; padding: 1.5rem; background-color: rgb(252, 252, 253); border: 2px solid whitesmoke; box-shadow: 0px 0px 9px 4px #ef3f65;">
+
+        <div id="song" style="display: flex; position: fixed; top: 5rem; left: 0; width: 100%; 
+        background-color: #cf4d7a; padding: 1rem; box-shadow: 0px 4px 6px rgba(0,0,0,0.1); z-index: 9;">
+            <p style="flex: 1; text-align: center; font-size: 1.2rem; font-weight: bold; ">#</p>   
+            <p style="flex: 3; text-align: center; font-size: 1.2rem; font-weight: bold; ">Song Cover</p>
+            <p style="flex: 3; text-align: center; font-size: 1.2rem; font-weight: bold; ">Song</p>
+            <p style="flex: 3; text-align: center; font-size: 1.2rem; font-weight: bold; ">Title</p>
+            <p style="flex: 3; text-align: center; font-size: 1.2rem; font-weight: bold; ">Album</p>
+        </div>
+
+        <div style="margin-top: 5rem; display: flex; flex-direction: column; top: 7.2rem; left: 0; width: 100%; ">
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem;">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">1</p>
+            <img src="img/breathless.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Breathless - Shankar Mahadevan.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Breathless - Shankar Mahadevan</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Breathless</p>
+           </div>
+           
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem;  ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">2</p>
+            <img src="img/safar.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Safar - Arijit Singh, Pritam.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Safar - Arijit Singh, Pritam</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Jab Harry Met Sejal</p>
+           </div>
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem; ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">3</p>
+            <img src="img/okjaanu.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/OK Jaanu Title Track - A. R. Rehman, Gulzar.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >OK Jaanu Title Track - A. R. Rehman, Gulzar</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Ok Jaanu</p>
+           </div>
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem; ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">4</p>
+            <img src="img/dildara.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Dildara - Shafqat Amanat Ali.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Dildaara - Shafqat Amanat Ali</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Ra-One</p>
+           </div>
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem; ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">5</p>
+            <img src="img/manchala.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Manchala - Nupur Pant, Shafqat Amanat Ali, Vishal-Shekhar.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Manchala - Nupur Pant, Shafqat Amanat Ali, Vishal-Shekhar</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Hasee Toh Phasee</p>
+           </div>
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem; ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">6</p>
+            <img src="img/darasal.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Darasal - Atif Aslam, Pritam.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Darasal - Atif Aslam, Pritam</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Raabta</p>
+           </div>
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem; ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">7</p>
+            <img src="img/saibo.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Saibo - Sachin-Jigar, Shreya Ghosha, Tochi Raina.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Saibo - Sachin-Jigar, Shreya Ghosha, Tochi Raina</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Shor in the City</p>
+           </div>
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem; ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">8</p>
+            <img src="img/adhoore.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Adhoore - Alyssa Mendonsa, Vishal Dadlani.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Adhoore - Alyssa Mendonsa, Vishal Dadlani</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Bread Ke Baad</p>
+           </div>
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem; ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">9</p>
+            <img src="img/afreenafreen.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Afreen Afreen - Rahat Fateh Ali Khan, Momina Mustehsan.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Afreen Afreen - Rahat Fateh Ali Khan, Momina Mustehsan</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 3.2rem;" >Coke Studio</p>
+           </div>
+
+           <div class="song-list" style="display: flex; border-bottom: 3px double rgb(59, 57, 57); margin-bottom: 2rem; ">
+            <p style="font-size: 1.2rem; margin-top: 2rem;">10</p>
+            <img src="img/choolo.png" style="width: 8rem; margin-left: 10rem; padding-bottom: 1rem;">
+            <audio src="songs/Choo Lo - The Local Train.mp3" controls muted style="margin-left: 9rem; margin-top: 2rem;"></audio>
+            <p style="font-size: 1.2rem; margin-left: 6rem; margin-top: 3.2rem; width: 20rem;" >Choo Lo - The Local Train</p>
+            <p style="font-size: 1.2rem; margin-left: 5.3rem; margin-top: 1.2rem;" >Aalas Ka Pedh</p>
+           </div>
+
+        </div>
+
+    </main>
+</body>
+</html>

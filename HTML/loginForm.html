@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+</head>
+<body>
+    <div style="width: 17rem; height: auto; margin: auto; padding: 20rem; text-align: start; padding: 3rem; border: 2px solid rgb(43, 42, 42); 
+    box-shadow: 0px 0px 10px 5px rgba(55, 54, 62, 0.816); background-color: rgb(242, 215, 250); 
+    margin-top: 3rem;">
+
+    <form action="" style="color: black;;" novalidate >
+        <h2 style="text-align: start; font-size: 2rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            Log in
+        </h1>
+            <label for="email" style="text-align: start;">
+                <b>Email<span style="font-size: 1.2rem; color: red;">*</span></b>
+            </label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Enter email" required >
+            <br><br><br>
+
+            <label for="mob" style="text-align: start;">
+                <b>Mobile Number</b>
+            </label>
+            <br>
+            <input type="tel" id="mob" name="mob" placeholder="Enter mobile number" pattern="[0-9]{10}" maxlength="10">
+            <br><br><br>
+
+            <label for="username" style="text-align: start;"></label>
+                <b>Username<span style="font-size: 1.2rem; color: red;">*</span></b>
+            </label>
+            <br>
+            <input type="text" id="username" name="username" placeholder="Enter username" required minlength="6" maxlength="10" >
+            <br><br><br>
+
+            <label for="password">
+                <b>Password<span style="font-size: 1.2rem; color: red;">*</span></b>
+            </label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Enter password" required pattern="[a-z,A-Z,0-9,@]{6,10}">
+            <br><br><br><br>
+
+            <button type="submit" style="height: 2.45rem; font-weight: bolder; font-size: 1.2rem; border: 3px solid black; 
+             background-color: rgba(10, 21, 37, 0.867); color: #fff; ">LOGIN</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset"style="height: 2.45rem; font-weight: bolder; font-size: 1.2rem; border: 3px solid black; 
+             background-color: rgba(10, 21, 37, 0.867);; color: #fff; ">CANCEL</button>
+            <br><br>
+
+
+            <label for="feedback">
+                <b>`Feedback</b>
+            </label><br>
+            <textarea name="feedback" readonly>Hi there </textarea>
+       
+        
+    </form>
+
+    <audio src="What a Feeling - One Direction (Lyrics).mp3" controls muted autoplay>
+
+    </audio>
+    </div>
+
+
+</body>
+</html>

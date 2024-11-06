@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- To refresh page after every 5 second  -->
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <!-- header -->
+    <header style="display: flex;">
+        <div class="header" style="height: 5rem; width: 100%; display: flex; align-items: center; background-color: rgb(35, 47, 63);">
+            <a href="home.html">
+                <img src="img/amazon_logo.png" style=" height: auto; width: 7rem; margin-left: 4rem;">
+            </a>
+            <div id="location" style="display: flex; align-items: center; margin-left: 2rem;">
+                <i class="fa-solid fa-location-dot" style="color: #fff; font-size: 1.5rem;"></i>             
+                <span style="color: #fff; margin-left: 0.5rem;">Deliver to <br><b>India</b></span>
+
+             
+                <select name="department" style="margin-left: 2rem; font-size: 1.2rem; height: 2.45rem; border-left: 3px solid orange;
+                 border-top: 3px solid orange; border-bottom: 3px solid orange; background-color: rgba(223, 225, 223, 0.763);">
+                    <option value="All department">All</option>
+                    <option value="Women">Women</option>
+                    <option value="Men">Men</option>
+                    <option value="Books">Books</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Home & Kitchen">Home & Kitchen</option>
+                    <option value="Luggage">Luggage</option>
+                    <option value="Art & Crafts">Art & Crafts</option>
+                </select>
+                <input type="text"style="border-right: 3px solid orange;
+                 border-top: 3px solid orange; border-bottom: 3px solid orange; font-size: 1.2rem; height: 2.1rem; width: 44rem;"></textarea>
+
+
+                <!-- login button -->
+                <a href="login.html"><button id="login_btn" name="login_btn" 
+                style="height: 2.45rem; font-weight: bolder; font-size: 1.2rem; border: 3px solid orange; 
+                margin-left: 2rem; background-color: rgba(25, 31, 40, 0.323); color: #fff;">
+                <i class="fa-solid fa-user-plus" font></i>&nbsp;Login</button></a>
+
+                <!-- cart button -->
+                <a href="cart.html"><button id="cart_btn" name="cart_btn" 
+                style="height: 2.45rem; font-weight: bolder; font-size: 1.2rem; border: 3px solid orange; 
+                margin-left: 2rem; background-color: rgba(25, 31, 40, 0.323); color: #fff;">
+                <i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart</button></a>
+        </div>
+    </header>
+
+    <!-- nav -->
+    <nav style="display: flex;">
+        <div class="nav" style="height: 3.8rem; width: 100%; display: flex; align-items: center; justify-content: space-evenly; color: aqua; background-color: rgb(183, 186, 190);"> 
+            <a href="women.html" style="color: rgb(35, 47, 63); font-size: 1.2rem;">Women Section</a>
+            <a href="women.html" style="color: rgb(35, 47, 63); font-size: 1.2rem;">Men Section</a>
+            <a href="women.html" style="color: rgb(35, 47, 63); font-size: 1.2rem;">Books</a>
+            <a href="women.html" style="color: rgb(35, 47, 63); font-size: 1.2rem;">Home and Kitchen Section</a>
+            <a href="women.html" style="color: rgb(35, 47, 63); font-size: 1.2rem;">Electronics</a>
+            <a href="women.html" style="color: rgb(35, 47, 63); font-size: 1.2rem;">Art and Crafts</a>
+        </div>
+    </nav>
+
+
+    <!-- main -->
+    <main style="margin: 4rem; padding: 4rem;">
+
+        <section id="section">
+            <div id="div_container"  style="display: flex; flex-direction: row; justify-content: space-between;">
+                <div>
+                    <img src="img/women.jpg" style="width: 25rem; height: 20rem;">
+                    <p style="text-align: center; font-weight: bolder; font-size: 1.2rem;">Women's Clothing & Fashion </p>
+                </div>
+                <div>
+                    <img src="img/men.jpg" style="width: 25rem; height: 20rem;" >
+                    <p style="text-align: center; font-weight: bolder; font-size: 1.2rem;">Men's Clothing & Fashion.</p>
+
+                </div>
+                <div>
+                    <img src="img/books.jpeg"  style="width: 25rem; height: 20rem;">
+                    <p style="text-align: center; font-weight: bolder; font-size: 1.2rem;">Books</p>
+                </div>
+            </div>
+
+            <div id="div_container" style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 5rem;">
+                <div>
+                    <img src="img/homeandkitchen.webp" style="width: 25rem; height: 20rem;" >
+                    <p style="text-align: center; font-weight: bolder; font-size: 1.2rem;">Home & Kitchen Appliances </p>
+                
+                </div>
+                <div>
+                    <img src="img/electronics.jpg" style="width: 25rem; height: 20rem;" >
+                    <p style="text-align: center; font-weight: bolder; font-size: 1.2rem;">Electronics</p>
+                
+                </div>
+                <div>
+                    <img src="img/artandcraft.jpg"  style="width: 25rem; height: 20rem;">
+                    <p style="text-align: center; font-weight: bolder; font-size: 1.2rem;">Art & Crafts </p>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- footer -->
+    <footer id="footer" style="display: flex;">
+        <div class="footer" style="color: #fff; text-align: left; justify-content: space-around; height: 17rem; width: 100%; display: flex; align-items: center; background-color: rgb(35, 47, 63);">
+           
+            <div id="connect">
+                <b><u>Connect with us</u></b><br><br>
+                <a href="" style="text-decoration: none; color: #fff;"><i class="fa-brands fa-facebook" style="font-size: 1.5rem; color: #fff;"></i>&nbsp;&nbsp;Facebook</a><br><br>
+                <a href="" style="text-decoration: none; color: #fff;"><i class="fa-brands fa-instagram" style="font-size: 1.5rem; color: #fff;"></i>&nbsp;&nbsp;Instagram</a><br><br>
+                <a href="" style="text-decoration: none; color: #fff;"><i class="fa-brands fa-twitter" style="font-size: 1.5rem; color: #fff;"></i>&nbsp;&nbsp;Twitter</a><br>              
+            </div>
+
+            <div id="contact">
+                <b><u>Contact us</u></b><br><br>
+                <a href="tel:+91 8097975840" style="text-decoration: none; color: #fff;">Tel: +91 8097975840</a><br><br>
+                <a href="mailto:janhvibaraskar03@gmail.com" style="text-decoration: none; color: #fff;">email: janhvibaraskar03@gmail.com</a><br><br>             
+            </div>
+
+            <div id="qrcode">
+                <b><u>Scan QR Code</u></b><br><br>
+                <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.amazon.in" style="width: 10rem;">
+            </div>
+
+            <div id="youtube">
+                <b><u>Watch our Youtube videos</u></b><br><br>
+                <iframe width="300" height="190" src="https://www.youtube.com/embed/NrmMk1Myrxc?si=DKcKV7Up94f21GY9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+            </div>
+        
+        </div>
+
+        
+    </footer>
+    
+    
+</body> 
+</html>

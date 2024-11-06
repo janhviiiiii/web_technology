@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <header style="display: flex;">
+        <div class="header" style="height: 5rem; width: 100%; display: flex; align-items: center; background-color: rgb(35, 47, 63);">
+            <a href="home.html">
+                <img src="img/amazon_logo.png" style=" height: auto; width: 7rem; margin-left: 4rem;">
+            </a>
+            <div id="location" style="display: flex; align-items: center; margin-left: 2rem;">
+                <i class="fa-solid fa-location-dot" style="color: #fff; font-size: 1.5rem;"></i>             
+                <span style="color: #fff; margin-left: 0.5rem;">Deliver to <br><b>India</b></span>
+
+             
+                <select name="department" style="margin-left: 2rem; font-size: 1.2rem; height: 2.45rem; border-left: 3px solid orange;
+                 border-top: 3px solid orange; border-bottom: 3px solid orange; background-color: rgba(223, 225, 223, 0.763);">
+                    <option value="All department">All</option>
+                    <option value="Women">Women</option>
+                    <option value="Men">Men</option>
+                    <option value="Books">Books</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Home & Kitchen">Home & Kitchen</option>
+                    <option value="Luggage">Luggage</option>
+                    <option value="Art & Crafts">Art & Crafts</option>
+                </select>
+                <input type="text"style="border-right: 3px solid orange;
+                 border-top: 3px solid orange; border-bottom: 3px solid orange; font-size: 1.2rem; height: 2.1rem; width: 44rem;"></textarea>
+
+
+                <!-- login button -->
+                <a href="login.html"><button id="login_btn" name="login_btn" 
+                style="height: 2.45rem; font-weight: bolder; font-size: 1.2rem; border: 3px solid orange; 
+                margin-left: 2rem; background-color: rgba(25, 31, 40, 0.323); color: #fff;">
+                <i class="fa-solid fa-user-plus" font></i>&nbsp;Login</button></a>
+
+                <!-- cart button -->
+                <a href="cart.html"><button id="cart_btn" name="cart_btn" 
+                style="height: 2.45rem; font-weight: bolder; font-size: 1.2rem; border: 3px solid black; 
+                margin-left: 2rem; background-color: orange; color: #000;">
+                <i class="fa-solid fa-cart-shopping"></i>&nbsp;Cart</button></a>
+        </div>
+    </header>
+
+    <main style="margin: 3rem; padding: 3rem;">
+
+        <div id="div_container"  style="display: flex; flex-direction: column; justify-content: space-between;">
+            <p style="font-size: 2rem; font-weight:630;">Shopping Cart</p>
+            <div style="display: flex; flex-direction: row;">
+
+                <img src="img/suitcase.jpg" style="width: 20rem;">
+                <div style="display: flex; flex-direction: column;">
+                    <p style="margin-left: 2rem; font-size: 1.5rem;"><b>Suit Case</b></p>
+                    
+                    <p style="margin-left: 2rem; font-size: 1.5rem;"><b>Price:</b> Rs.3000</p>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-direction: row;;">
+
+                <img src="img/microwave.jpeg" style="width: 20rem;">
+                <div style="display: flex; flex-direction: column;">
+                    <p style="margin-left: 2rem; font-size: 1.5rem;"><b>Microwave</b></p>
+                    <p style="margin-left: 2rem; font-size: 1.5rem;"><b>Price:</b> Rs.8499</p>
+                </div>
+            </div>
+        </div>
+
+      
+    </main>
+    
+    <footer style="display: flex;">
+        <div class="header" style="color: #fff; text-align: left; justify-content: center; height: 15rem; width: 100%; display: flex; align-items: center; background-color: rgb(35, 47, 63);">
+           
+            <div id="connect">
+                <b>Connect with us</b><br><br>
+                <a href="" style="color: #fff;"><i class="fa-brands fa-facebook" style="font-size: 1.5rem; color: #fff;"></i>&nbsp;&nbsp;Facebook&nbsp;&nbsp;</a><br><br>
+                <a href="" style="color: #fff;"><i class="fa-brands fa-instagram" style="font-size: 1.5rem; color: #fff;"></i>&nbsp;&nbsp;Instagram&nbsp;&nbsp;</a><br><br>
+                <a href="" style="color: #fff;"><i class="fa-brands fa-twitter" style="font-size: 1.5rem; color: #fff;"></i>&nbsp;&nbsp;Twitter&nbsp;&nbsp;</a><br>
+                           
+            </div>
+        
+        </div>
+
+        
+    </footer>
+    
+    
+</body> 
+</html>

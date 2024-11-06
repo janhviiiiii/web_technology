@@ -1,0 +1,17 @@
+body
+{
+    margin:0;
+    top:0;
+}
+
+#div1
+{
+    height: 10rem;
+    width: 20rem;
+    margin: auto;
+    margin-top: 10rem;
+
+    background: linear-gradient(to right, black 20%, rgba(0, 0, 0, 0) 100%);
+    background-color: aquamarine;
+    border: 2px solid black;
+}

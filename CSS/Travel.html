@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Application</title>
+    <link rel="stylesheet" href="Travel.css">
+</head>
+<body>
+
+    <!-- container 1 -->
+    <div id="container_1">
+
+        <header id="header">
+            <div id="header_up">
+                <nav id="nav_bar">
+                
+                    
+                    <a class="nav_link" href="" id="logo_a"><img id="logo_img" src="logo.avif"></a>
+                    <a class="nav_link" href="" id="hotel">Hotels</a>
+                    <a class="nav_link" href="" id="flights">Flights</a>
+                    <a class="nav_link" href="" id="trains">Trains</a>
+                    <a class="nav_link" href="" id="cabs">Cabs</a>  
+                    <button id="btn_login">
+                        <a class="nav_link" href="" id="login">Login</a>
+                    </button>
+                </nav>
+            </div>
+
+            <div id="header_down">
+                
+                <input type="radio" name="way" id="one_way" checked>
+                <label for="one_way">
+                    One Way
+                </label>
+                
+                <input type="radio" name="way" id="round_trip">
+                <label for="round_trip">
+                    Round Trip
+                </label>
+            </div>
+            
+        </header>
+
+        <main id="main">
+
+            <div id="main_container">
+
+                <div id="div1">
+                    <p class="fromto" id="from">From</p>
+
+                    <!-- <p class="location">Delhi</p>  -->
+                    <select name="location" id="select_from" class="location"> <!--give name to store the country_code as well-->
+                        <option class="opt" value="Delhi" default>Delhi</option>
+                        <option class="opt" value="Goa">Goa</option>
+                        <option class="opt" value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option class="opt" value="Sikkim">Sikkim</option>
+                        <option class="opt" value="Rajasthan">Rajasthan</option>
+                        <option class="opt" value="Tamil Nadu">Tamil Nadu</option>
+                        <option class="opt" value="Uttarakhand">Uttarakhand</option>
+                        <option class="opt" value="Karnataka">Karnataka</option>
+                        <option class="opt" value="Punjab">Punjab</option>
+                    </select>
+
+                </div>
+
+                <div id="icon_bidirection"><img src="exchange.png" id="bidirection_img">
+                </div>
+
+                <div id="div2">
+                
+                    <p class="fromto" id="to">to</p>
+                
+                    <select name="location" id="select_to" class="location"> <!--give name to store the country_code as well-->
+                        <option class="opt" value="Mumbai" default>Mumbai</option>
+                        <option class="opt" value="Chennai">Chennai</option>
+                        <option class="opt" value="Jammu-Kashmir">Jammu-Kashmir</option>
+                        <option class="opt" value="Gujarat">Gujarat</option>
+                        <option class="opt" value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option class="opt" value="West Bengal">West Bengal</option>
+                        <option class="opt" value="Assam">Assam</option>
+                        <option class="opt" value="Haryana">Haryana</option>
+                        <option class="opt" value="Odisha">Odisha</option>
+                    </select>
+
+                </div>
+
+            </div>
+        </main>
+    </div>   
+    
+    <!--container 2-->
+    <div id="container_2">
+        <h1>Holiday</h1>
+    </div>
+
+    <!--container 3-->
+    <div id="container_3">
+        <h1>Homestay</h1>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div id="footer">
+            <h1>footer</h1>
+        </div>
+    </footer>
+
+
+</body>
+</html>

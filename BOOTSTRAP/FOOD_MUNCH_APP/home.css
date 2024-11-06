@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand img {
+  height: 5.2rem;
+  width: 8rem;
+}
+
+.carousel_img_div {
+  display: flex;
+  justify-content: center;
+}
+.carousel_img {
+  height: 88vh;
+  width: 100%;
+}
+
+.menu_div {
+  width: 22rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_img {
+  height: 18rem;
+  width: 19rem;
+}
+
+a button {
+  width: 15rem;
+}
+
+.delivery_section_img {
+  height: 20rem;
+}
+
+.gift_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-section-box-image {
+  width: 12rem;
+}
+
+#modal_body {
+  display: flex;
+  justify-content: center;
+}
+
+.gift_section_voucher {
+  width: 20rem;
+}
+
+/* accordian */
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin-right: 2.5rem;
+}
+
+.accordian_body ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
