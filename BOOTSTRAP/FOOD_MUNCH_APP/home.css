@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
+/* nav bar */
+
 .navbar-brand img {
   height: 5.2rem;
   width: 8rem;
 }
 
+/* carousel */
 .carousel_img_div {
   display: flex;
   justify-content: center;
@@ -18,6 +21,7 @@
   width: 100%;
 }
 
+/* menu */
 .menu_div {
   width: 22rem;
   display: flex;
@@ -35,10 +39,12 @@ a button {
   width: 15rem;
 }
 
+/* delivery */
 .delivery_section_img {
   height: 20rem;
 }
 
+/* gift */
 .gift_div {
   display: flex;
   flex-direction: column;
@@ -50,6 +56,7 @@ a button {
   width: 12rem;
 }
 
+/* modal */
 #modal_body {
   display: flex;
   justify-content: center;
@@ -60,7 +67,6 @@ a button {
 }
 
 /* accordian */
-
 ul{
   display: flex;
   flex-wrap: wrap;
