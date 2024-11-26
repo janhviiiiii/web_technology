@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let p_no = BigInt(prompt("Enter last 2 digit of phone number: "));
+      // console.log(typeof(p_no));
+      // let num = 11112222222222111n;
+      // console.log(num);
+      // // let p_no = 27n;
+      // let sum_num= num+p_no;
+      // console.log(sum_num);
+
+      let name = "aaaaaaaaaaa";
+      if (name.length > 10) {
+        for (let i = 1; i <= name.length; i++) {
+          console.log(name);
+        }
+      } 
+      else {
+        //checking number is prime or not 
+        if (name.length === 2 || name.length === 1) {
+          console.log("Prime Number");
+        }
+
+        for (let i = 3; i <= name.length; i++) {
+          if (name.length % 2 == 0) {
+            console.log("Not Prime");
+            break;
+          } else {
+            console.log("Prime");
+            break;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

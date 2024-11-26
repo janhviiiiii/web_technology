@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- to write script tag in the head -->
+    <!-- <script defer src="script.js"></script> -->
+    <!-- <script async src="script.js"></script> -->
+  </head>
+  <body>
+    <h1>We're learning JavaScript</h1>
+
+    <!-- <script src="script.js"> -->
+    <script>
+      //   let email = "janhvi@gmail.com";
+      //   let a = email.split("@");
+      //   console.log(a);
+      //   console.log(a[0].length);
+      //   let len = a[0].length;
+      //   console.log("X".repeat(len) + "@" + a[1]);
+
+      //   let phone = "9619206757";
+      //   let num = phone.slice(0, 8);
+      //   let phone_len = num.length;
+      //   console.log(phone_len);
+      //   let num1 = phone.slice(8, 10);
+      //   console.log(num);
+
+      //   console.log(num1);
+      //   console.log("x".repeat(phone_len) + num1);
+
+      let phone_Num = prompt("enter phone number");
+      console.log(phone_Num);
+      if (phone_Num.length == 10) {
+        let num = phone_Num.slice(0, 8);
+        let len = num.length;
+        let num2 = phone_Num.slice(8, 10);
+        console.log("x".repeat(len) + num2);
+      } else {
+        console.log("invalide");
+      }
+    </script>
+    <!-- 
+    </script> -->
+  </body>
+</html>
