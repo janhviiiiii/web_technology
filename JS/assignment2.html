@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // take 4 digit number and reverse it
+      function reverse() {
+        let user_input = Number(prompt("Enter 4 digit number: "));
+        let original_num = user_input;
+        let reverse = 0;
+        let remainder = 0;
+        while (user_input !== 0) {
+          remainder = user_input % 10;
+          reverse = reverse * 10 + remainder;
+          user_input = Math.floor(user_input / 10); //to Ensures user_input is converted to an integer after division. This avoids floating-point values.
+        }
+        console.log("Original Number: ", original_num);
+        console.log("Reversed Number: ", Number(reverse));
+      }
+      reverse();
+
+      // print area of square
+      let side = Number(prompt("Enter side of square: "));
+      ((side) => {
+        console.log("Side of square: ", side);
+        console.log("Area of square: ", side * side);
+      })(side);
+
+      // print % if boys and girls in class (assume 25 boys & 50 girls)
+      
+      
+      // print sum of digit (eg. 8859)
+      let printSum = function () {
+        let num = Number(prompt("Enter number to print it's sum: "));
+        let original_num = num;
+        let sum = 0;
+        while (num !== 0) {
+          let remainder = num % 10;
+          sum += remainder;
+          num = Math.floor(num / 10); //to remove last digit
+        }
+        console.log("Number: ", original_num);
+        console.log("Sum of Number: ", sum);
+      };
+      printSum();
+
+      // print the character based on index number (take user input)
+      function printChar() {
+        let user_input = prompt("Enter a word: ");
+        let index = Number(prompt("Enter index to return character: "));
+        console.log(
+          "Character at index " + index + " is " + user_input.charAt(index)
+        );
+      }
+      printChar();
+
+      // print repeated string (length value times)
+      function printString() {
+        let user_input = prompt("Enter a word: ");
+        let index = Number(prompt("Enter index to return character: "));
+        console.log(
+          "Character at index " + index + " is " + user_input.charAt(index)
+        );
+      }
+        // printString();
+
+      // read number N and print 3 lines and each line contains N pluses(+)
+      function printPlus() {
+        let n = Number(prompt("Enter a number: "));
+        console.log(`Number entered: ${n}`);
+        for (let i = 1; i <= 3; i++) {
+          // Loop 3 times
+          console.log("+".repeat(n) + "\n");
+        }
+      }
+      printPlus();
+
+      // take 2 number and check if 1st number is greater then print true otherwise print false
+      function isGreater() {
+        let num1 = Number(prompt("Enter Number 1: "));
+        console.log(`Number 1 : ${num1}`);
+        let num2 = Number(prompt("Enter Number 2: "));
+        console.log(`Number 2 : ${num2}`);
+
+        if (num1 > num2) {
+          console.log("true");
+        } else {
+          console.log("false");
+        }
+      }
+      isGreater();
+    </script>
+  </body>
+</html>

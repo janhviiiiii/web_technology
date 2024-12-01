@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function printHelloWorld() {
+        console.log("Hello World!");
+      }
+      printHelloWorld();
+
+      let printHash = function () {
+        let num = Number(prompt("Enter Number of Hash you want: "));
+        console.log("#".repeat(num));
+      };
+      printHash();
+
+      let add = function (a, b) {
+        console.log(a + b);
+      };
+      add(5585, 78454);
+
+      let product = function (a, b) {
+        console.log(a * b);
+      };
+      product(45, 4859);
+
+      let div = function (a, b) {
+        console.log(a / b);
+      };
+      div(458554, 78);
+
+      let printSecondWord = function () {
+        let word1 = prompt("Enter Word 1 : ");
+        let word2 = prompt("Enter Word 2 : ");
+        console.log(word2);
+      };
+      printSecondWord();
+
+      let printName = function () {
+        let username = prompt("Enter Username : ");
+        let surname = prompt("Enter Surname : ");
+        console.log(surname, username);
+      };
+      printName();
+
+      function printNameAge() {
+        let name = prompt("Enter Name: ");
+        let age = prompt("Enter Age: ");
+
+        console.log(name, age);
+      }
+      printNameAge();
+
+      function printTechName() {
+        let tech1 = prompt("Enter tech Name 1: ");
+        let tech2 = prompt("Enter tech name 2: ");
+        console.log(tech1, tech2);
+      }
+      printTechName();
+
+      function printSquare() {
+        let n = Number(prompt("Enter Number of row/col: "));
+        for (let i = 1; i <= n; i++) {
+          let row = "";
+          for (let j = 1; j <= n; j++) {
+            // if (i === 1 || i === n || j === 1 || j === n) { //for hollow square
+            if (i >= 1 || i <= n || j === 1 || j === n) {
+              row += "* "; // to add star
+            } else {
+              row += "  "; // to add space
+            }
+          }
+          document.write(row + "<br>");
+          // console.log(row); // Print the row
+          console.log(row); // Print the row
+          console.log("\n");
+        }
+      }
+      printSquare();
+
+      function printTriangle() {
+        let r = 3; // Number of rows
+        for (let i = 1; i <= r; i++) {
+          let row = "";
+          for (let j = 1; j <= 2 * r - 1; j++) {
+            // no. of column =  2 * r - 1
+            if (j >= r - i + 1 && j <= r + i - 1) {
+              row += "*";
+            } else {
+              row += " ";
+            }
+          }
+          console.log(row); // Print the current row
+        }
+      }
+      printTriangle();
+
+      function printLengthOfWord()
+      {
+        let name = prompt("Enter Name to print length exclusing 1st and last character: ");
+        let new_name = name.slice(1,-1);
+        // console.log(new_name); //to check
+        console.log("Length of new word: ",new_name.length);
+      }
+      printLengthOfWord();
+
+      function printStarAroundWord()
+      {
+        let word = "js"; //length 2 
+        let len = word.length; //here 2
+        console.log("*".repeat(len)+word+"*".repeat(len));
+      }
+      printStarAroundWord();
+
+      function printFirstAndLastLetter()
+      {
+        let word = prompt("Enter a word: ");
+        console.log(word.charAt(0)+word.slice(-1));
+      }
+      printFirstAndLastLetter();
+    </script>
+  </body>
+</html>

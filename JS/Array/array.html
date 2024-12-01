@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Program</title>
+  </head>
+  <body>
+    <script>
+      let a = []; //declaring array
+      a[0] = 10; //number
+      a[1] = false; //boolean
+      a[2] = "hello"; //string
+      a[3] = 20; //again number
+      console.log(a); //printing array
+      delete a[2]; //delete the value at index 2
+      console.log(a); //print array
+      a[2] = "Janhvi"; //updating value at 2nd index
+      console.log(a); //print array
+
+      //    let product=[]
+      //    for(let i=0;i<5;i++){
+      //     product[i]=Number(prompt());
+      //    }
+      
+      product = [100, 200, 300, 400, 500];
+      console.log(product);
+      let price = 0;
+      for (let i = 0; i < product.length; i++) {
+        product[i] = product[i] + (product[i] * 18) / 100;
+        price = product[i] + price;
+      }
+
+      console.log(product);
+      console.log(price);
+
+      console.log("map method");
+      let product_price = [199, 1500, 4999, 500];
+      let gst = product_price.map((v) => v + v * 0.18);
+      console.log(gst);
+      let total = gst.reduce((a, b) => a + b); //b accepts the price on the index of array
+      console.log(total);
+
+      let total_price = product_price
+        .map((v) => v + v * 0.18)
+        .reduce((a, b) => a + b);
+      console.log(total_price);
+    </script>
+  </body>
+</html>

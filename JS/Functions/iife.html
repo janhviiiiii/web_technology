@@ -1,0 +1,55 @@
+<!-- immediate invoke function expression -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      (function () {
+        console.log("hi there");
+      })(); //semi-colon is mandatory
+
+      (function (a) {
+        return a + 100;
+      });
+      console.log(1000);
+
+      (() => {
+        // console.log("Enter a number: ");
+        console.log("Arrow function");
+        for (let i = 1; i <= 10; i++) {
+          if (i % 2 === 0) {
+            console.log(i);            
+          }
+        }
+      })
+      ();
+
+      (function named(){
+        console.log("Named Function");
+        for (let i = 1; i <= 10; i++) {
+          if (i % 2 === 0) {
+            console.log(i);
+          }
+        }
+      })
+      ();
+
+      (function (){
+        console.log("Anonymous Function");
+        for (let i = 1; i <= 10; i++) {
+          if (i % 2 === 0) {
+            console.log(i);
+          }
+        }
+      })
+      ();
+
+
+      
+    </script>
+  </body>
+</html>
