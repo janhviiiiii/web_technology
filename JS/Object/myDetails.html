@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="userName" type="text" style="background-color: bisque;">
+
+    <script>
+        let userName = document.getElementById("userName")
+        console.log(userName); 
+        USER = 
+        {
+            id: 1,
+            name: "Janhvi",
+            age: 21,
+            skills: ["core java", "html", "css", "js", "sql"]
+        }
+
+        //to get/print
+        //ObjectName.keyName
+        console.log(USER.id);
+        console.log(USER.name);
+        console.log(USER.age);
+        console.log(USER.skills);
+
+        //to replace/modify/update
+        //ObjectName.key=value
+        USER.name="janu";
+        console.log(USER.name);
+
+        //to delete/remoVe
+        //delete ObjectName.key
+        delete USER.age;
+
+
+        //Merging an Array
+        let arr1 = [1];
+        let arr2 = [2];
+
+        //by using concat() method
+        let arr3 = arr1.concat(arr2, 3)
+        let arr4 = arr3.concat("Hello")
+        console.log(arr4);
+
+        //by using rest(...) operator 
+        let mergedArr = [...arr1, ...arr2];
+        console.log(mergedArr);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      id="userName"
+      type="text"
+      value=""
+      placeholder="Enter Name"
+      style="background-color: bisque"
+    />
+    <br /><br />
+    <button id="btn_submit" type="submit">Submit</button>
+
+    <p id="para">Java</p>
+
+    <script>
+      let userName = document.getElementById("userName");
+      let btn_submit = document.getElementById("btn_submit");
+      let para = document.getElementById("para");
+      console.log("Before swapping");
+      console.log(para.textContent);
+
+      //to check if the button is imported in js or not
+    //   console.log(btn_submit);
+
+      //addEventListener() -> used to handle an particular event(interaction between browser and webpage) for eg: onclick of button
+      btn_submit.addEventListener("click", () => {
+        // userName.value="React"
+        console.log(userName.value);
+        console.log("After swapping");
+        console.log(para.value = "React");
+        console.log("Button Clicked!");
+      });
+    </script>
+  </body>
+</html>

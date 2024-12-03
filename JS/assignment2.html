@@ -31,8 +31,20 @@
       })(side);
 
       // print % if boys and girls in class (assume 25 boys & 50 girls)
-      
-      
+      function printPercent() {
+        let boys = 25;
+        let girls = 50;
+        let totalStudents = boys + girls;
+
+        let boysPercentage = (boys / totalStudents) * 100;
+        let girlsPercentage = (girls / totalStudents) * 100;
+
+        console.log(`Boys: ${boysPercentage.toFixed(2)}%`); //.toFixed(2) -> till 2 decimal number
+        console.log(`Girls: ${girlsPercentage.toFixed(2)}%`);
+      }
+
+      printPercent();
+
       // print sum of digit (eg. 8859)
       let printSum = function () {
         let num = Number(prompt("Enter number to print it's sum: "));
@@ -60,13 +72,12 @@
 
       // print repeated string (length value times)
       function printString() {
-        let user_input = prompt("Enter a word: ");
-        let index = Number(prompt("Enter index to return character: "));
-        console.log(
-          "Character at index " + index + " is " + user_input.charAt(index)
-        );
+        let str = "janhvi";
+        for (let i = 1; i <= str.length; i++) {
+          console.log(str);
+        }
       }
-        // printString();
+      printString();
 
       // read number N and print 3 lines and each line contains N pluses(+)
       function printPlus() {

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" value="" id="username">
+        <br>
+        <p id="msg" style="color: red;"></p>
+        <br>
+        <button type="submit" id="btn_submit">Submit</button>
+
+        <script>
+            //database username value
+            let user = "janhvi";
+
+            // to get username
+            let username = document.getElementById("username");
+            // console.log(username.textContent);
+            let msg = document.getElementById("msg");
+            let btn_submit = document.getElementById("btn_submit")
+
+           
+            btn_submit.addEventListener("click", function() {
+                if(username.value !== user) {
+                    msg.textContent = "Invalid username";
+                } else {
+                    msg.textContent = ""; //clear the msg if username matches
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
