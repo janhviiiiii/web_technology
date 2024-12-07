@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#chatBot {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: lightblue;
+  transition: transform 0.3s;
+}
+
+#chatBot:hover {
+  transform: scale(1.1);
+}
+
+#login-form {
+  margin: auto;
+  margin-top: 200px;
+  width: 40%;
+  border: 2px solid red;
+  display: none;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 80%;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: darkgreen;
+}

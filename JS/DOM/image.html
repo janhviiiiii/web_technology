@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #img_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: 10rem;
+      }
+      #img {
+        width: 12rem;
+        height: 15rem;
+      }
+      #btn {
+        height: 2rem;
+        width: 8rem;
+        background-color: rgb(32, 112, 8);
+        border-radius: 0.8rem;
+        border: none;
+        color: white;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="img_div">
+      <img src="img.jpg" id="img" class="img_class" />
+      <br />
+      <button id="btn" class="btn_class">Click Me</button>
+    </div>
+    <script>
+      let img = document.getElementById("img");
+      console.log(img);
+      let btn = document.getElementById("btn");
+      console.log(btn);
+      let flag = true;
+
+      btn.addEventListener("click", () => {
+        if (flag == true) {
+            img.style.borderRadius="50%";
+            flag = false;
+            btn.textContent="Make Square.";
+        }
+        else{
+            img.style.borderRadius="0";
+            flag = true;
+            btn.textContent="Make Circle.";
+        }
+      });
+    </script>
+  </body>
+</html>

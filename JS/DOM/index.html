@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      #techName {
+        margin-left: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      #btnSubmit {
+        margin-left: 2rem;
+        height: 1.9rem;
+        width: 5rem;
+        background-color: greenyellow;
+        color: black;
+        border: none;
+        border-radius: 0.6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="js" class="techName">JS</p>
+    <p id="css" class="techName">CSS</p>
+    <br />
+    <button id="btnSubmit">Submit</button>
+    <script>
+      let js = document.getElementById("js");
+      let css = document.getElementById("css");
+      let btnSubmit = document.getElementById("btnSubmit");
+      //getElementsByClassName
+      let techName = document.getElementsByClassName("techName");
+      // console.log(techName);
+
+      //   through class
+      //first store the elements using index as it is stored in format of array
+      //class elements are stored in the form of HTML Element
+      //(which are similar to array therefore we need to access it via arrName[index])
+      let j = techName[0];
+      let c = techName[1];
+      let r = "React";
+
+      //addEventListerner syntax
+      // btnSubmit.addEventListener("even name", "callBack Function")
+      btnSubmit.addEventListener("click", () => {
+        console.log("Button Clicked.");
+        js.textContent = r;
+      });
+    </script>
+  </body>
 </html>

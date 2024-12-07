@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chatBot.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="login-form">
+            <form>
+                <label for="">username</label>
+                <input type="text" id="username" placeholder="username"><br>
+                <label for="">password</label>
+                <input type="password" id="pass" placeholder="password"><br>
+                <button id="btn">Submit</button>
+            </form>
+        </div>
+        <div id="chatBot">
+            <h1>click here   <h1>
+        </div>
+    </div>
+    <script>
+        let btn = document.getElementById('chatBot')
+        console.log(btn);
+        let login = document.getElementById('login-form');
+        btn.addEventListener("click", () => {
+            login.style.
+            display = "block"
+        })
+        let username=document.getElementById('username');
+        console.log(username);
+        let password=document.getElementById('pass');
+        let submit=document.getElementById('btn');
+        let obj={username:"",pwd:""}
+        submit.addEventListener("click",(e)=>{
+          e.preventDefault();
+            obj.username=username.value;
+            obj.pwd=password.value;
+            console.log(username.value);
+            console.log(password.value);
+            console.log(obj);
+        });        
+    </script>
+</body>
+
+</html>

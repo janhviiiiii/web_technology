@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link rel="stylesheet" href="navbar.css">
+  <title>Navbar</title>
+</head>
+<body>
+  <header>
+    <div class="navbar_div">
+      <a href="navbar.html">
+        <img src="logo.png" alt="Logo" class="logo">
+      </a>
+      <ul class="nav_links">
+        <li><a href="#" id="men">MEN</a></li>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">KIDS</a></li>
+        <li><a href="#">HOME & LIVING</a></li>
+        <li><a href="#">BEAUTY</a></li>
+        <li><a href="#">STUDIO</a></li>
+      </ul>
+      <input type="search" placeholder="Search...">
+      <div class="button_div">
+        <div class="buttons">
+          <i class="fa-regular fa-user"></i>
+          <p>Profile</p>
+        </div>
+        <div class="buttons">
+          <i class="fa-regular fa-heart"></i>
+          <p>Wishlist</p>
+        </div>
+        <div class="buttons">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <p>Bag</p>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown" id="boxxx">
+      <ul>
+        <li><a href="#">Shirts</a></li>
+        <li><a href="#">Pants</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <script>
+    let men = document.getElementById("men");
+    let boxxx = document.getElementById("boxxx");
+
+    // Show dropdown on hover
+    men.addEventListener("mouseover", () => {
+      boxxx.style.display = "block";
+    });
+
+    // Hide dropdown when cursor leaves both MEN and dropdown
+    men.addEventListener("mouseout", () => {
+      setTimeout(() => {
+        if (!boxxx.matches(':hover')) boxxx.style.display = "none";
+      }, 100);
+    });
+
+    boxxx.addEventListener("mouseout", () => {
+      setTimeout(() => {
+        if (!men.matches(':hover')) boxxx.style.display = "none";
+      }, 100);
+    });
+
+    boxxx.addEventListener("mouseover", () => {
+      boxxx.style.display = "block";
+    });
+  </script>
+</body>
+</html>

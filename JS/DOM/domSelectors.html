@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div
+        {
+            height: 10rem;
+            width: 10rem;
+            background-color: beige;
+            
+            margin: 0.3rem;
+            padding: 0.3rem;
+        }
+        
+        #div1{
+            background-color: red;
+        }
+        #div2{
+            background-color: yellow;
+        }
+        #div3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="div" id="div1">
+        div1
+    </div>
+    <div class="div" id="div2">
+        <p>div2</p>
+    </div>
+    <div class="div" id="div3">
+        div3
+    </div>
+
+    <script>
+        let tagName1 = document.getElementsByTagName("div");
+        console.log(tagName1); // output in format of HTML Collection
+        console.log(tagName1[0]) //to get single element
+
+        let tagName2 = document.querySelector("div");
+        console.log(tagName2); //get first matching element by default //can use addEventListerners
+
+        let tagName3 = document.querySelectorAll("div"); 
+        console.log(tagName3); //in format of NodeList
+    </script>
+</body>
+</html>
