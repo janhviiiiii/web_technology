@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="div" id="container">
+      <h1>hello</h1>
+      <p>hi</p>
+    </div>
+    <div id="displayName"></div>
+    <script>
+      let container = document.getElementById("container");
+      let heading = document.createElement("h1");
+      let displayName = document.getElementById("displayName");
+      let text = "this is heading tag";
+
+      heading.textContent = text; //gets text content
+      //   heading.innerText = text; //gets text content
+      //   heading.innerHTML = text; //gets entire element <st>content</et>
+      container.append(heading);
+      console.log(heading);
+
+      //to set the content
+      //use backticks if you need to insert entire element
+      // container.innerHTML = `
+      //   <h1> I have inserted h1 tag dynamically</h1>
+      //   <p>This is paragraph</p>
+      //   `;
+
+      // container.innerHTML =
+      // `
+      // <img src="img.jpg" alt="img" style="height:30rem; width:20rem">
+      // <br>
+      // <button>Click</button>
+      // `
+      let input = "";
+      let arr = ["abc", "def", "ghi", "jkl", "mno"];
+      arr.map((e) => {
+        // console.log(e);
+        input = input + `<h1> ${e}</h1>`;
+      });
+      console.log(input);
+      displayName.innerHTML = input;
+    </script>
+  </body>
+</html>

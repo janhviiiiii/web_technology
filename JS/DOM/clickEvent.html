@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        .maincontainer{
+            height: 40rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      #box1 {
+        height: 30rem;
+        width: 30rem;
+        background-color: aquamarine;
+        border: 2px solid red;
+      }
+      #box2 {
+        height: 20rem;
+        width: 20rem;
+        background-color: rgb(186, 239, 192);
+        border: 2px solid red;
+        margin: 5rem;
+      }
+      #box3 {
+        height: 10rem;
+        width: 10rem;
+        background-color: rgb(212, 255, 127);
+        border: 2px solid red;
+        margin: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div id="box1" class="box">
+        Outer Box
+        <div id="box2" class="box">
+          Middle Box
+          <div id="box3" class="box">Inner Box</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        let box1 = document.getElementById("box1");
+        let box2 = document.getElementById("box2");
+        let box3 = document.getElementById("box3");
+        // console.log(box1);
+        // console.log(box2);
+        // console.log(box3);
+
+        box1.addEventListener("click", (event)=>{
+            console.log("Outer Box is clicked")
+            event.stopPropagation();
+        })
+
+        box2.addEventListener("click", (e)=>{
+            console.log("Middle Box is clicked")
+            e.stopImmediatePropagation();
+        })
+
+        box3.addEventListener("click", ()=>{
+            console.log("Inner Box is clicked")
+            event.stopPropagation();
+        })
+    </script>
+  </body>
+</html>

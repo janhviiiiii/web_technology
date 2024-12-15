@@ -10,6 +10,18 @@
         // let arrow_function = a => {return a+2}
         let arrow_function = a => a+5;
         console.log(arrow_function(5)); 
+
+        let noOfVowels = (msg)=>{
+            let num = 0;
+            for(let i = 0; i<msg.length; i++){
+                if(msg.charAt(i)=='a'||msg.charAt(i)=='e'||msg.charAt(i)=='i'||msg.charAt(i)=='o'||msg.charAt(i)=='u')
+                num++;
+            }
+            return num;
+        }
+
+        console.log(noOfVowels("aescanuiioua"));
+
     </script>
     
 </body>
