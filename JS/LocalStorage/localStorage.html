@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      #loginForm {
+        background-color: #dca1b0;
+        height: 20rem;
+        width: 25rem;
+        margin: auto;
+        margin-top: 10rem;
+        border-radius: 2rem;
+        padding: 3rem;
+        border: 2.7px dotted black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      label {
+        font-size: 1.2rem;
+        font-family: cursive;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+      }
+
+      input {
+        margin-bottom: 0.7rem;
+        height: 1.8rem;
+        border-radius: 0.4rem;
+        padding-left: 0.4rem;
+        background-color: rgb(214, 212, 211);
+      }
+
+      #wrongUn, 
+      #wrongPwd {
+        display: none;
+        color: red;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
+
+      button {
+        height: 2.5rem;
+        width: 5.8rem;
+        border-radius: 0.4rem;
+        background-color: #1f4271;
+        color: white;
+        font-size: 1.2rem;
+        border: 1px solid rgb(47, 45, 45);
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="loginForm">
+
+      <div class="username">
+        <label for="un"> Username: </label>
+        <input id="un" name="un" placeholder="Enter Username" type="text" />
+        <br />
+        <p id="wrongUn">Invalid Username</p>
+      </div>
+      <div class="password">
+        <label for="pwd"> Password: </label>
+        <input type="password" placeholder="Enter Password" id="pwd" />
+        <p id="wrongPwd">Invalid Password</p>
+      </div>
+
+      <button type="submit">Login</button>
+      <!-- </fieldset> -->
+    </form>
+    <script>
+      let loginForm = document.getElementById("loginForm");
+      let un = document.getElementById("un");
+      let pwd = document.getElementById("pwd");
+      let wrongUn = document.getElementById("wrongUn");
+      let wrongPwd = document.getElementById("wrongPwd");
+
+      let correctUn = "janhvi";
+      let correctPwd = "janhvi123";
+
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // userData.username = un.value; //assigning un value to userData object key username
+        // userData.password = pwd.value; //assigning pwd value to userData object key password
+
+        wrongUn.style.display = "none";
+        wrongPwd.style.display = "none";
+
+        if (un.value === correctUn && pwd.value === correctPwd) {
+          // creating object to store the username and password
+          let userData = { username: un.value, password: pwd.value }; //let variableName = {key: "value", key: "value"};
+          console.log(userData); //will return object
+
+          //store in local databse
+          let json_obj = JSON.stringify(userData); //JSON.stringify() is a method to convert js obhect to JSON
+          console.log(json_obj); //will return json object
+
+          // to store in localDatabase use localStorage.setItems(unique_id(key), value)
+          localStorage.setItem("userInformation", json_obj); //value should be in json format therefore convert js obj -> json using JSON.stringify() method
+
+          alert("login Successful!");
+        } else {
+          if (un.value !== correctUn) {
+            wrongUn.style.display = "block";
+          }
+          if (pwd.value !== correctPwd) {
+            wrongPwd.style.display = "block";
+          }
+        }
+      });
+
+      // to getInfo from localStorage -> localStorage.getItem("keyName");
+      let json_data = localStorage.getItem("userInformation");
+      console.log(json_data);
+    </script>
+  </body>
+</html>
